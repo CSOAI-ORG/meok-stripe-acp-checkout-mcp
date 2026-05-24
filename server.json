@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+  "version": "1.0.0",
+  "description": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic Commerce Protocol checkout intents. AP2 mandate crosswalk + PSD2 SCA enforcement. By MEOK AI Labs.",
+  "repository": { "url": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp", "source": "github" },
+  "packages": [{ "registryType": "pypi", "identifier": "meok-stripe-acp-checkout-mcp", "version": "1.0.0", "runtimeHint": "python", "transport": { "type": "stdio" } }],
+  "remotes": [{ "type": "streamable-http", "url": "https://api.meok.ai/v1/a2a/stripe-acp-checkout" }]
+}
