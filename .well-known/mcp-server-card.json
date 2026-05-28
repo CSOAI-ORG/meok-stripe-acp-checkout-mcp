@@ -1,0 +1,31 @@
+{
+  "name": "meok-stripe-acp-checkout-mcp",
+  "title": "Meok Stripe Acp Checkout Mcp",
+  "description": "MEOK Stripe ACP Checkout MCP \u2014 ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic Commerce Protocol checkout intents. AP2 mandate crosswalk + PSD2 SCA enforcement. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "list_acp_catalogue"
+    },
+    {
+      "name": "create_checkout_intent"
+    },
+    {
+      "name": "verify_intent_against_mandate"
+    },
+    {
+      "name": "request_delegated_payment"
+    },
+    {
+      "name": "emit_signed_receipt"
+    },
+    {
+      "name": "list_acp_partners"
+    }
+  ]
+}

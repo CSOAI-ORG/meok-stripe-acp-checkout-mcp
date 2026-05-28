@@ -1,0 +1,22 @@
+# meok-stripe-acp-checkout-mcp
+
+> MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic Commerce Protocol checkout intents. AP2 mandate crosswalk + PSD2 SCA enforcement. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- list_acp_catalogue
+- create_checkout_intent
+- verify_intent_against_mandate
+- request_delegated_payment
+- emit_signed_receipt
+- list_acp_partners
+
+## Install
+```
+pip install meok-stripe-acp-checkout-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-stripe-acp-checkout-mcp/
+- Docs: https://meok.ai
