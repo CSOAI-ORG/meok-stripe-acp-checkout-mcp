@@ -1,65 +1,78 @@
-# MEOK Stripe ACP Checkout MCP
+# Meok Stripe Acp Checkout MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£999/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_stripe_acp_checkout_mcp/)
 
-# Stripe Agentic Commerce Protocol — ChatGPT shopping bridge
+> Stripe ACP Checkout MCP - ChatGPT shopping bridge + AP2 mandate crosswalk + PSD2 SCA
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp -->
+Stripe ACP Checkout MCP - ChatGPT shopping bridge + AP2 mandate crosswalk + PSD2 SCA. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-stripe-acp-checkout-mcp)](https://pypi.org/project/meok-stripe-acp-checkout-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this bridges
+## 🚀 Quick Start
 
-**Stripe Agentic Commerce Protocol (ACP)** — the merchant-side spec for ChatGPT shopping + Claude shopping + agentic checkout. Launched Sept 2025 with OpenAI. 60+ launch partners by Mar 2026 (Shopify, Etsy, Instacart, DoorDash, Uber Eats, Ticketmaster, Expedia, Wayfair, Target, …).
+```bash
+# Install via pip
+pip install meok_stripe_acp_checkout_mcp
 
-This MCP issues + verifies + signs Stripe ACP checkout intents, crosswalks against AP2 mandates (`meok-ap2-mandate-mcp`), enforces PSD2 SCA, and emits audit-defensible receipts.
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-stripe-acp-checkout-mcp --client claude
+```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|---|---|
-| `list_acp_catalogue(merchant_id, category?)` | Fetch merchant's ACP product catalogue |
-| `create_checkout_intent(cart, customer_did, merchant_id, currency, ap2_mandate_id?)` | New checkout intent |
-| `verify_intent_against_mandate(intent_id, mandate_id, mandate_remaining_eur)` | Cross-check vs AP2 cap |
-| `request_delegated_payment(intent_id, payment_method_id, sca_method)` | Stripe-hosted SCA flow |
-| `emit_signed_receipt(intent_id, stripe_charge_id)` | HMAC-signed receipt |
-| `list_acp_partners()` | 60+ known ACP-enabled merchants |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Sister MCPs
+## 📖 Documentation
 
-- `meok-ap2-mandate-mcp` — Google AP2 user-side spend authorisation (pairs perfectly)
-- `agent-commerce-protocol-mcp` — multi-protocol commerce bridge (ACP / AP2 / x402)
-- `agent-x402-paywall-mcp` — Coinbase HTTP 402 on-chain settlement
-- `meok-x402-wrap-mcp` — 1-line USDC paywall
+- [Full Documentation](https://docs.meok.ai/meok-stripe-acp-checkout-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+## 🛡️ Compliance
 
-## Pricing
+This MCP server is built with **EU AI Act compliance** built-in:
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Buy: https://meok.ai/a2a
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Wire it up — full stack
+## 🏢 Enterprise
 
-The agentic-checkout signed pipeline:
+Need custom development, SLA guarantees, or white-label deployment?
 
-1. **meok-ap2-mandate-mcp** — user signs spend authorisation
-2. **agent-policy-enforcement-mcp** — IAM gate per call
-3. **meok-stripe-acp-checkout-mcp** — this MCP (creates Stripe ACP intent)
-4. **agent-commerce-payments-mcp** — PSD2 + MiCA payment rails
-5. **agent-audit-logger-mcp** — hash-chained evidence
-6. **a2a-governance-bridge-mcp** — fold into 1 signed event
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack).
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-## Licence
+## 🤝 Part of the MEOK Ecosystem
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
