@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge
 ========================================================
 

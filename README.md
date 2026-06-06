@@ -1,4 +1,7 @@
 # Meok Stripe Acp Checkout MCP
+mcp-name: io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp
+
+# MEOK Stripe ACP Checkout MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -118,3 +121,4 @@ Once configured, ask your assistant, for example:
 - "Use `list_acp_catalogue` to …"
 - "Use `create_checkout_intent` to …"
 - "Use `verify_intent_against_mandate` to …"
+<!-- BUY-LADDER:END -->
