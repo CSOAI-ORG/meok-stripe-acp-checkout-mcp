@@ -1,0 +1,2 @@
+[console_scripts]
+meok-stripe-acp-checkout-mcp = server:main
