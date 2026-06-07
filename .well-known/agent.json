@@ -1,0 +1,77 @@
+{
+  "name": "meok-stripe-acp-checkout-mcp",
+  "description": "MEOK Stripe ACP Checkout MCP \u2014 ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic",
+  "url": "https://proofof.ai/scorecard/meok-stripe-acp-checkout-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "list_acp_catalogue",
+      "name": "List Acp Catalogue",
+      "description": "list_acp_catalogue via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "create_checkout_intent",
+      "name": "Create Checkout Intent",
+      "description": "create_checkout_intent via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_intent_against_mandate",
+      "name": "Verify Intent Against Mandate",
+      "description": "verify_intent_against_mandate via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "request_delegated_payment",
+      "name": "Request Delegated Payment",
+      "description": "request_delegated_payment via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "emit_signed_receipt",
+      "name": "Emit Signed Receipt",
+      "description": "emit_signed_receipt via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_acp_partners",
+      "name": "List Acp Partners",
+      "description": "list_acp_partners via meok-stripe-acp-checkout-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

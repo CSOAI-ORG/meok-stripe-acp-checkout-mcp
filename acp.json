@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-stripe-acp-checkout-mcp",
+    "description": "MEOK Stripe ACP Checkout MCP \u2014 ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meok-stripe-acp-checkout-mcp"
+      }
+    ],
+    "capabilities": [
+      "list_acp_catalogue",
+      "create_checkout_intent",
+      "verify_intent_against_mandate",
+      "request_delegated_payment",
+      "emit_signed_receipt",
+      "list_acp_partners"
+    ]
+  }
+}
