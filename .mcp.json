@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-stripe-acp-checkout-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-stripe-acp-checkout-mcp"
+      ]
+    }
+  }
+}
