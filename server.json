@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
-  "version": "1.0.0",
-  "description": "MEOK Stripe ACP Checkout MCP \u2014 ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic",
+  "version": "1.0.4",
+  "description": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "meok-stripe-acp-checkout-mcp",
-      "version": "1.0.0",
+      "version": "1.0.4",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"

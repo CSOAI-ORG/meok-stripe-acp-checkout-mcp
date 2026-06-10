@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-stripe-acp-checkout-mcp"
-version = "1.0.3"
+version = "1.0.4"
 description = "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic Commerce Protocol checkout intents. AP2 mandate crosswalk + PSD2 SCA enforcement. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
