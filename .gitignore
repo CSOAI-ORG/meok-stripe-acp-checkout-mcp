@@ -6,3 +6,6 @@ __pycache__/.!18804!server.cpython-311.pyc
 dist/meok_stripe_acp_checkout_mcp-1.0.4-py3-none-any.whl
 dist/meok_stripe_acp_checkout_mcp-1.0.4.tar.gz
 pypi-publish-20260609-060323.log
+
+# Auto-added during alignment sweep
+*.pyc
