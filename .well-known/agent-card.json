@@ -1,0 +1,134 @@
+{
+  "name": "Meok Stripe Acp Checkout Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-stripe-acp-checkout-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic Commerce Protocol checkout intents. AP2 mandate crosswalk + PSD2 SCA enforcement. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "list_acp_catalogue",
+      "name": "List Acp Catalogue",
+      "description": "List Acp Catalogue — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "create_checkout_intent",
+      "name": "Create Checkout Intent",
+      "description": "Create Checkout Intent — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_intent_against_mandate",
+      "name": "Verify Intent Against Mandate",
+      "description": "Verify Intent Against Mandate — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "request_delegated_payment",
+      "name": "Request Delegated Payment",
+      "description": "Request Delegated Payment — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "emit_signed_receipt",
+      "name": "Emit Signed Receipt",
+      "description": "Emit Signed Receipt — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_acp_partners",
+      "name": "List Acp Partners",
+      "description": "List Acp Partners — a tool of the meok-stripe-acp-checkout-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-stripe-acp-checkout-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
